@@ -13,3 +13,15 @@ assert convertTemp(10,'C') == 50
 assert converTemp(32,'F') == 0
 """
 
+temp = float(input("enter the temperature value: "))
+degrees = input ("Enter the unit (C or F): ")
+
+def convertTemp(temp, degrees):
+    if degrees == "C" or "c":
+        f = (temp* (9/5) +32)
+        return(f)
+    else:
+        c = ((temp - 32)*(5/9))
+        return(c)
+x = convertTemp(temp, degrees)
+print(x)

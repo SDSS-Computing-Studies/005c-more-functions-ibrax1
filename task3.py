@@ -13,9 +13,14 @@ Sample assertions:
 assert hypotenuse(6,8) == 10
 (2 points)
 """
-
-
-def hypotenuse():
-    pass
-
+import math
+s1 = float (input("enter a short side: "))
+s2 = float (input("enter another short side: "))
+s3 =()
+def hypotenuse(s1, s2):
+    s3 = (s1**2) + (s2**2)
+    s3 = math.sqrt(s3)
+    return(s3)
+x = hypotenuse(s1, s2)
+print(x)
 assert hypotenuse(6,8) == 10
